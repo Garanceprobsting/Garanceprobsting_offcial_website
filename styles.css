@@ -668,3 +668,48 @@ a {
 .project-gallery::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
 }
+   /* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+  .project-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-text {
+    position: static;
+    width: 100%;
+  }
+
+  .project-text-inner {
+    max-width: 100%;
+  }
+
+  .project-gallery {
+    width: 100%;
+  }
+
+  .project-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .project-page {
+    padding: 1.5rem;
+  }
+
+  .project-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-text p,
+  .project-meta {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+}
