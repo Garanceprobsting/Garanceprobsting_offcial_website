@@ -779,5 +779,27 @@ a {
     padding: 20px;
     font-size: 11px;
   }
+@media (max-width: 768px) {
 
+  .info-layout {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .info-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .info-intro p {
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  .portrait {
+    width: 180px;
+    transform: none;
+  }
+
+}
 }
