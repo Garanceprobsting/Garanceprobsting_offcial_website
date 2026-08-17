@@ -708,31 +708,76 @@ a {
     margin-bottom:1rem;
   }
 /* =========================
-   MOBILE — MARQUEE
+   MOBILE
    ========================= */
 
 @media (max-width: 600px) {
 
-  .marquee {
-    overflow: hidden;
+  html,
+  body {
     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
-  .marquee-track {
-    gap: 18px; /* plus d'espace entre les images */
-  }
-
-  .marquee-card {
-    width: 42vw; /* images plus petites sur téléphone */
-    height: auto;
-    flex-shrink: 0;
-  }
-
-  .marquee-card img {
+  .site-header {
     width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .info-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 100px 20px 40px;
+  }
+
+  .info-layout {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box;
+  }
+
+  .info-text {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .info-text p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .portrait {
+    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
   }
 
-}
+  .info-details {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 60px;
+  }
+
+  .copyright {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 11px;
+  }
+
 }
