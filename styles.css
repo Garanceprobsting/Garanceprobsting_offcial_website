@@ -707,5 +707,32 @@ a {
     display:block;
     margin-bottom:1rem;
   }
+/* =========================
+   MOBILE — MARQUEE
+   ========================= */
 
+@media (max-width: 600px) {
+
+  .marquee {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .marquee-track {
+    gap: 18px; /* plus d'espace entre les images */
+  }
+
+  .marquee-card {
+    width: 42vw; /* images plus petites sur téléphone */
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .marquee-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
 }
