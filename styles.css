@@ -436,6 +436,26 @@ a {
 }
 
 
+/* ------------------------------------------------ Info Page */
+
+.info-page {
+  background: rgb(0, 0, 0);
+  color: white;
+  min-height: 100vh;
+}
+
+
+.info-page .site-header {
+  color: white;
+}
+
+
+.info-content {
+  min-height: 100vh;
+  padding: 180px 24px 120px;
+}
+
+
 .info-intro {
   max-width: 900px;
 }
