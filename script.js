@@ -72,3 +72,35 @@ if (cursor && window.matchMedia("(pointer: fine)").matches) {
 } else if (cursor) {
   cursor.remove();
 }
+const contactForm = document.getElementById("contact-form");
+const formSuccess = document.getElementById("form-success");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        contactForm.style.display = "none";
+        formSuccess.classList.add("visible");
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    }
+  });
+}
