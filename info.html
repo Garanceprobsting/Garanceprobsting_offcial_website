@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,65 +47,164 @@
 
   <main class="info-content">
 
+    <!-- INTRO -->
     <section class="info-intro">
 
+      <div class="info-layout">
 
-  <div class="info-layout">
+        <div class="info-text">
+          <p>
+            Garance is a French product designer based in Berlin, developing
+            objects, furniture, systems and spatial experiences. Rooted in an
+            education at the School of Applied Arts in Paris (ENSAAMA Olivier
+            de Serres), she is currently pursuing her master’s degree at the
+            University of the Arts (UdK) in Berlin. Garance dedicates her
+            practice to producing pieces meant to become mediators of our daily
+            rituals, active presences shaping the way we experience materials
+            and inhabit our spaces.
+          </p>
+        </div>
 
-    <div class="info-text">
-      <p>
-        Garance is a French product designer based in Berlin, developing objects, furniture, systems and spatial experiences. Rooted in an education at the School of Applied Arts in Paris (ENSAAMA Olivier de Serres), she is currently pursuing her master’s degree at the University of the Arts (UdK) in Berlin. Garance dedicates her practice to producing pieces meant to become mediators of our daily rituals, active presences shaping the way we experience materials and inhabit our spaces. 
-     </p>
-    </div>
+        <img
+          src="images/portrait.png"
+          alt="Garance Pröbsting"
+          class="portrait"
+        >
 
-    <img src="Images/portrait.webp" alt="Garance Pröbsting" class="portrait">
+      </div>
 
-  </div>
-
-</div>
     </section>
 
 
+    <!-- CONTACT / SOCIALS / LEGAL -->
     <section class="info-details">
 
-      <div>
-        <span class="meta">Email</span>
-        <p>
-          info@garanceprobsting.com<br>
-          g.proebsting@udk-berlin.de
-        </p>
+
+      <!-- COLUMN 1 — CONTACT -->
+      <div class="contact-form">
+
+        <span class="meta">Get in touch</span>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="access_key"
+            value="515fdab9-aaa5-4c83-a953-8181f0a8591f"
+          >
+
+          <input
+            type="hidden"
+            name="subject"
+            value="New message from garanceprobsting.com"
+          >
+
+          <div class="form-field">
+
+           <label for="name">01</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Your name *"
+    required
+  >
+</div>
+
+<div class="form-field">
+  <label for="company">02</label>
+  <input
+    type="text"
+    id="company"
+    name="company"
+    placeholder="Name of company"
+  >
+</div>
+
+<div class="form-field">
+  <label for="email">03</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Your email *"
+    required
+  >
+</div>
+
+<div class="form-field">
+  <label for="message">04</label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Your message *"
+    required
+  ></textarea>
+</div>
+
+
+          <button type="submit">
+            Send ↗
+          </button>
+
+        </form>
+
       </div>
 
 
-      <div>
+      <!-- COLUMN 2 — SOCIALS -->
+      <div class="info-socials">
+
         <span class="meta">Socials</span>
+
         <p>
-           <a href="https://www.instagram.com/garanceprobsting" target="_blank">Instagram</a>
+          <a
+            href="https://www.instagram.com/garanceprobsting"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
         </p>
+
       </div>
 
-<div>
-  <a href="privacypolicy.html" class="meta">Privacy Policy</a>
 
+      <!-- COLUMN 3 — LEGAL -->
+      <div class="info-legal">
 
-<div>
-  <a href="impressum.html" class="meta">Legal Notice </a>
-  <p>
-    
+        <a
+          href="privacypolicy.html"
+          class="meta"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="impressum.html"
+          class="meta"
+        >
+          Legal Notice
+        </a>
+
+      </div>
 
 
     </section>
-
 
   </main>
 
 
+  <!-- COPYRIGHT -->
   <div class="copyright">
     © 2026 Garance Pröbsting - All rights reserved
   </div>
 
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
-<body>
+</body>
 </html>
