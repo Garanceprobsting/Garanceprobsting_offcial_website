@@ -955,8 +955,4 @@ a {
     object-fit: contain;
   }
 
-.site-header .logo,
-.site-header .site-nav a {
-  font-size: 1.8rem;
-}
 }
