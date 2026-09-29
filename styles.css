@@ -957,5 +957,12 @@ a {
 .info-details {
   grid-template-columns: 1fr;
   gap: 70px;
+
+   @media (max-width: 768px) {
+  .project-text > .project-text-inner > p:last-child {
+    font-size: 5rem !important;
+    line-height: 1.5;
+  }
+}
 }
 }
