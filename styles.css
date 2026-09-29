@@ -904,7 +904,7 @@ a {
 .form-success.visible {
   display: block;
 }
-
+}
 @media (max-width: 768px) {
 
   .project-page{
@@ -963,6 +963,4 @@ a {
     font-size: 5rem !important;
     line-height: 1.5;
   }
-}
-}
 }
