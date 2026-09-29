@@ -939,7 +939,7 @@ a {
   }
 
   .project-text p{
-    font-size:.9rem;
+    font-size:.15rem;
     line-height:1.5;
   }
 
@@ -955,5 +955,8 @@ a {
     object-fit: contain;
   }
 
-
+.site-header .logo,
+.site-header .site-nav a {
+  font-size: 1.8rem;
+}
 }
