@@ -368,7 +368,7 @@ a {
     width: 240px;
   }
   .statement p {
-    font-size: 24px;
+    font-size: 20px;
   }
   .work-grid {
     grid-template-columns: minmax(0, 1fr);
