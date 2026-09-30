@@ -1005,6 +1005,25 @@ a {
   font-weight: 400;
   line-height: 1;
 }
+      @media (max-width: 768px) {
+  .info-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .portrait {
+    order: -1;
+    width: 180px;
+    transform: none;
+    margin-bottom: 30px;
+  }
+
+  .info-text {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 }
 
 
