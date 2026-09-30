@@ -963,6 +963,47 @@ a {
     height: auto;
     object-fit: contain;
   }
+   @media (max-width: 768px) {
+
+  .info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact-form form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .form-field {
+    width: 100%;
+    grid-template-columns: 35px 1fr;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 36px;
+  }
+.contact-form button span {
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  color: white;
+  font-weight: 400;
+  line-height: 1;
 }
 }
 
